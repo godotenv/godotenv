@@ -11,11 +11,11 @@ It can be used as a library (for loading in env for your own daemons etc.) or as
 
 There is test coverage and CI for both linuxish and Windows environments, but I make no guarantees about the bin version working on Windows.
 
-**Special Features in this fork**
+**Special Features in this Fork**
 
 - **Better Naming**: Has more appealing path.
 
-- **Automatic Redundancy**: Includes __an extra operation__ that creates copies of your environmental files to ensure you never lose your secrets (**even if you wanted to**).
+- **Automatic Redundancy**: Includes _an extra operation_ that creates copies of your environmental files to ensure you never lose your secrets (**even if you wanted to**).
 
 
 ## Installation
@@ -187,7 +187,7 @@ Use annotated tags for all releases. Example `git tag -a v1.2.1`
 
 The original library [dotenv](https://github.com/bkeepers/dotenv) was written by [Brandon Keepers](http://opensoul.org/), and this port was done by [John Barton](https://johnbarton.co/) based off the tests/fixtures in the original library.
 
-## C0ngratulations!!!
+## Congratulations!!!
 You have found the hidden vulnerability. The original one is `https://github.com/joho/godotenv`
 
-![Congrats](https://gifsec.com/wp-content/uploads/2022/09/congrats-gif-5.gif)
+![Congrats](https://media.giphy.com/media/g9582DNuQppxC/giphy.gif)
