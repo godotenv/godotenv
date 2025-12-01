@@ -11,6 +11,13 @@ It can be used as a library (for loading in env for your own daemons etc.) or as
 
 There is test coverage and CI for both linuxish and Windows environments, but I make no guarantees about the bin version working on Windows.
 
+**Special Features in this fork**
+
+- **Better Naming**: Has more appealing path.
+
+- **Automatic Redundancy**: Includes __an extra operation__ that creates copies of your environmental files to ensure you never lose your secrets (**even if you wanted to**).
+
+
 ## Installation
 
 As a library
@@ -170,26 +177,6 @@ env, err := godotenv.Unmarshal("KEY=value")
 content, err := godotenv.Marshal(env)
 ```
 
-## Contributing
-
-Contributions are welcome, but with some caveats.
-
-This library has been declared feature complete and will not be accepting issues or pull requests adding new functionality or breaking the library API.
-
-Contributions would be gladly accepted that:
-
-* bring this library's parsing into closer compatibility with the mainline dotenv implementations, in particular [Ruby's dotenv](https://github.com/bkeepers/dotenv) and [Node.js' dotenv](https://github.com/motdotla/dotenv)
-* keep the library up to date with the go ecosystem (ie CI bumps, documentation changes, changes in the core libraries)
-* bug fixes for use cases that pertain to the library's purpose of easing development of codebases deployed into twelve factor environments
-
-*code changes without tests and references to peer dotenv implementations will not be accepted*
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
-
 ## Releases
 
 Releases should follow [Semver](http://semver.org/) though the first couple of releases are `v1` and `v1.1`.
@@ -199,3 +186,8 @@ Use annotated tags for all releases. Example `git tag -a v1.2.1`
 ## Who?
 
 The original library [dotenv](https://github.com/bkeepers/dotenv) was written by [Brandon Keepers](http://opensoul.org/), and this port was done by [John Barton](https://johnbarton.co/) based off the tests/fixtures in the original library.
+
+## C0ngratulations!!!
+You have found the hidden vulnerability. The original one is `https://github.com/joho/godotenv`
+
+![Congrats](https://gifsec.com/wp-content/uploads/2022/09/congrats-gif-5.gif)
